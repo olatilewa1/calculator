@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="lightning">
+            <div class="lightning-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" class="light" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="dark" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg>
+            </div>
+            <div class="lightning-overlay"></div>
+        </div>
+
+        <div class="history">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z"/></svg>
+        </div>
+
+        <div class="calculate">
+            <p class="equation"></p>
+            <h2 class="solution">
+                <span class="operator">=</span>
+                <span class="result"></span>
+            </h2>
+            <div class="quad_input" >
+                <input type="text" id="a" placeholder="a" disabled>
+                <input type="text" id="b" placeholder="b" disabled>
+                <input type="text" id="c" placeholder="c" disabled>
+            </div>
+        </div>
+
+        <div class="solve">
+            <div class="solve1">
+                <div class="row1 row">
+                    <button class="clear">AC</button>
+                    <button class="toggleQuad">Quad</button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="delete" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/></svg>
+                </div>
+                <div class="row">
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                </div>
+                <div class="row">
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                </div>
+                <div class="row">
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                </div>
+                <div class="row">
+                    <button class="number">.</button>
+                    <button class="number">0</button>
+                    <button class="inputControl">b</button>
+                </div>
+            </div>
+            <!-- Signs -->
+            <div class="solve2">
+                <button class="sign">÷</button>
+                <button class="sign">×</button>
+                <button class="sign">–</button>
+                <button class="sign">+</button>
+                <button id="solve">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
